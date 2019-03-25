@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>INTELLIVISION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"  href="style1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+</style>
+</head
+<body>
+
+<div class="header">
+
+  <marquee> <top> TELEVISION and WASHING MACHINE</top></marquee>
+    <h1>INTELLIVISION</h1>
+  <img src="Intellivision-3.png"  style="width:200px;height:100px">
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar"class="dropbtn">
+
+  <a href="final.html">HOME</a>
+  <a href="#about">ABOUT US</a>
+
+  <a onclick="myFunctions()" class="dropbtn">company</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#about">About</a>
+   <a href="http://intellivisionrevolution.com">Blog</a>
+   <a href="contact.html">Contact</a>
+   <a href="#custom">Custom</a>
+   <a href="support.html">Support</a>
+</div>
+     <a href="contact.html"class="right" >Contact</a>
+
+
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctions() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunctions() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+
+<div class="row">
+  <div class="side">
+
+    <section>
+    <img class="mySlides" src="a.jpg" style="width:100%" >
+    <img class="mySlides" src="b.jpg"  style="width:100%" >
+    <img class="mySlides" src="c.jpg"  style="width:100%" >
+  </section>
+<h2><a href="tv.html">TELEVISION</a></h2>
+<h2> <a href="wm.html">WASHING MACHINE</a></h2>
+
+</div>
+
+
+
+
+    <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+    </script>
+
+
+
+
+<div class="main">
+  <h1 id="about">About us</h1>
+  <br>
+  <p>For almost 10 years IntelliVision has been providing intelligent video analytics to make dumb cameras into Smart Cameras.<br>
+     We have always been at the forefront of computer vision technology and our investment some time ago in the growing field of AI,
+      neural networks and deep learning has paid off.<br>
+       Our facial and license plate recognition technology at up to 99% accuracy is now one of the fastest and most accurate in the
+        industry,comparing favorably with tech giants Facebook and Google,
+        and our ADAS product for advanced driver assistance dashcams is helping 1.5M drivers drive more safely.<br>
+
+  With multiple PhDs on our staff, more than 125 patents in our software and over 4 million cameras around the world running our
+   software, it’s no wonder that leading camera chip vendors recommend IntelliVision for their SoCs.<br>
+   Our portfolio of intelligent video and audio analytics products is unmatched in the industry, allowing System Integrators and
+   solution providers to build market-leading solutions across many different markets.<br>
+
+  IntelliVision software runs on more than 4 million cameras
+            worldwide and contains more than 125 patents.<br>
+  Most other video analytics software runs either in-camera or on-cloud, but not both.
+  <br>IntelliVision is unique in being able to run in all possible configurations – in-camera, on-premise, on-cloud – or any
+  combination, making the most efficient use of CPU, memory and bandwidth resources. And IntelliVision’s technology and forward
+   thinking have been recognized by industry watchers everywhere:<br>
+
+  Red Herring Top 100 North America<br>
+  Technavio Top 5 Video Analytics Vendors<br>
+  Markets and Markets Top 14 Video Analytics Vendors<br>
+  CIO Review Top 20 Video Surveillance Vendors<br>
+  Retail CIO Outlook Top 10 Analytics Vendors<br>
+  Frost & Sullivan 2017 Entrepreneurial Company of the<br>
+  Year, Security and Video Analytics<br>
+
+</div>
+  </div>
+
+
+<div class="footer">
+<p>  Powered by <a href="https://www.intelli-vision.com" target="_blank">INTELLIVISION</a>
+</p>
+<br>
+<a href="final.html">HOME</a>
+  <div class="icon-bar">
+
+  <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://in.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+
+
+
+
+</div>
+</div>
+</html>
